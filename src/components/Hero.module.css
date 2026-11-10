@@ -1,0 +1,151 @@
+.hero {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.heroContent {
+  margin-bottom: 3rem;
+  max-width: 720px;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--anthracite);
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.primaryBtn {
+  background-color: var(--green);
+  color: var(--sand);
+  padding: 0.875rem 1.25rem;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  border-radius: 2px;
+  display: block;
+}
+
+.whatsappBtn {
+  background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 0.875rem 1.25rem;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  border-radius: 2px;
+  display: block;
+}
+
+.sectionTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 1.5rem;
+}
+
+.propertiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.propertyCard {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(31, 58, 46, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.photoPlaceholder {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: var(--green);
+}
+
+.propertyInfo {
+  padding: 1.25rem;
+}
+
+.propertyType {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--terracotta);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.propertyTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--anthracite);
+  margin-bottom: 0.5rem;
+}
+
+.propertyDetails {
+  font-size: 0.875rem;
+  color: #555555;
+  margin-bottom: 0.75rem;
+}
+
+.propertyPrice {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.75rem;
+  }
+  .actions {
+    flex-direction: row;
+    width: auto;
+  }
+  .primaryBtn,
+  .whatsappBtn {
+    width: auto;
+    display: inline-block;
+    padding: 0.875rem 2rem;
+  }
+  .propertiesList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
